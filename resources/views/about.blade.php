@@ -2,6 +2,6 @@
 
 @section('content')
 
-  <h1>Majister</h>
+  <h1>About this site.</h>
 
 @endsection
