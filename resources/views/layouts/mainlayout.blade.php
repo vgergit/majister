@@ -4,14 +4,18 @@
 
     @include('layouts.partials.head')
 
- </head>
- <body>
+  </head>
+
+  <body>
 
 @include('layouts.partials.nav')
 @include('layouts.partials.header')
-@yield('content')
+    <div class="container d-flex justify-content-between">
+      @yield('content')
+    </div>
 @include('layouts.partials.footer')
 @include('layouts.partials.footer-scripts')
 
- </body>
+  </body>
+
 </html>

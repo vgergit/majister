@@ -1,6 +1,6 @@
 <section class="jumbotron text-center">
 
-  <div class="containter">
+  <div class="container">
 
     <h1 class="jumbotron-heading">Welcome to Majister</h1>
 

@@ -4,7 +4,7 @@
 
     <p class="float-right">
 
-      <a href="#">Back to top</a>
+      <a href="#" class="btn btn-primary">Back to top</a>
 
     </p>
 

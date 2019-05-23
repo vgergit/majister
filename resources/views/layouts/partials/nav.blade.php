@@ -1,4 +1,4 @@
-<div class="collapse bg-inverse" id="navbarHeader">
+<div class="bg-dark collapse" id="navbarHeader">
 
   <div class="container">
 
@@ -15,15 +15,15 @@
 
       <div class="col-sm-4 py-4">
 
-        <h4 class="text-white">Information</h4>
+        <h4 class="text-white">Links</h4>
 
         <ul class="list-unstyled">
 
-          <li><a href="/about" class="text-white">About this site</a></li>
+          <li><a href="/about" class="text-blue">About this site</a></li>
 
-          <li><a href="/bibliography" class="text-white">Bibliography</a></li>
+          <li><a href="/bibliography" class="text-blue">Bibliography</a></li>
 
-          <li><a href="/documentation" class="text-white">User documentation</a></li>
+          <li><a href="/documentation" class="text-blue">User documentation</a></li>
 
         </ul>
 
@@ -35,11 +35,15 @@
 
 </div>
 
-</div class="navbar navbar-inverse bg-inverse">
+<div class="navbar navbar-dark bg-dark box-shadow">
 
   <div class="container d-flex justify-content-between">
 
-    <a href="#" class="navbar-brand">Lesson</a>
+    <a href="/" class="navbar-brand">
+      <h4 class="text-white">
+        <strong>M a j i s t e r</strong>
+      </h4>
+    </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse"
     data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
