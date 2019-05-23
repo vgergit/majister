@@ -11,19 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@home');
 
-Route::get('/about', function () {
-    return view('about');
-});
+Route::get('/about', 'PagesController@about');
 
+Route::get('/bibliography', 'PagesController@bibliography');
 
-Route::get('/bibliography', function () {
-    return view('bibliography');
-});
-
-Route::get('/documentation', function () {
-    return view('documentation');
-});
+Route::get('/documentation', 'PagesController@documentation');

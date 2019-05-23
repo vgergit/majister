@@ -8,13 +8,15 @@
 
   <body>
 
-@include('layouts.partials.nav')
-@include('layouts.partials.header')
+    @include('layouts.partials.nav')
+    @include('layouts.partials.header')
+
     <div class="container d-flex justify-content-between">
       @yield('content')
     </div>
-@include('layouts.partials.footer')
-@include('layouts.partials.footer-scripts')
+
+    @include('layouts.partials.footer')
+    @include('layouts.partials.footer-scripts')
 
   </body>
 
