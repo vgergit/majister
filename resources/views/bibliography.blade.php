@@ -24,6 +24,10 @@
 
           <li>
             <p>Way, J. (2019). <cite>Laracasts</cite>. [online] Laracasts. Available at: <a href="https://laracasts.com">https://laracasts.com/</a> [Accessed 23 May 2019].</p>
+
+          </li>
+          <li>
+            <p>Zalt, M. (2017). <cite>Eloquent Relationships Cheat Sheet</cite>. [online] Hacker Noon. Available at: <a href="https://hackernoon.com/eloquent-relationships-cheat-sheet-5155498c209">https://hackernoon.com/eloquent-relationships-cheat-sheet-5155498c209</a> [Accessed 23 May 2019].</p>
           </li>
 
         </h6>

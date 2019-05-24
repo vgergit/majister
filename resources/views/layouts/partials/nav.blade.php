@@ -41,7 +41,7 @@
 
     <a href="/" class="navbar-brand">
       <h4 class="text-white">
-        <strong>M a j i s t e r</strong>
+        <strong style="text-decoration:underline;">M a j i s t e r</strong>
       </h4>
     </a>
 
