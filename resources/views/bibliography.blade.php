@@ -15,6 +15,10 @@
           </li>
 
           <li>
+            <p>Jombo, C. (2019). Setting up Mailtrap for Laravel Development. [online] Medium. Available at: <a href="https://medium.com/@christianjombo/setting-up-mailtrap-for-laravel-development-313133bb800c">https://medium.com/@christianjombo/setting-up-mailtrap-for-laravel-development-313133bb800c</a> [Accessed 23 May 2019].</p>
+          </li>
+
+          <li>
             <p>Otwell, T. (2019). <cite>Laravel - The PHP Framework For Web Artisans</cite>. [online] Laravel.com. Available at: <a href="https://laravel.com">https://laravel.com/</a> [Accessed 23 May 2019].</p>
           </li>
 

@@ -8,9 +8,9 @@
 
     <p>
 
-      <a href="#" class="btn btn-primary">Log In</a>
+      <a href="/login" class="btn btn-primary">Log In</a>
 
-      <a href="#" class="btn btn-secondary">Register</a>
+      <a href="/register" class="btn btn-secondary">Register</a>
 
     </p>
 
