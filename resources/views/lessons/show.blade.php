@@ -25,5 +25,22 @@
             @endforeach
         </div>
     </div>
+
+    @if (auth()->check())
+      <div class="row justify-content-center">
+          <div class="col-md-12">
+            <form method="POST" action="{{ $lesson->path() . '/comments' }}">
+              {{ csrf_field()}}
+              <div class="form-group">
+                <textarea name="content" id="content" class="form-control" placeholder="Care to comment?" rows="6"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-default">Comment on this lesson</button>
+            </form>
+          </div>
+        </div>
+    @else
+      <p class='text-center'>Please <a href="{{ route('login') }}">sign in</a> or <a href="{{ route('register') }}">register an account</a> to comment on this lesson.</p>
+    @endif
 </div>
 @endsection
