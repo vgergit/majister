@@ -31,4 +31,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/lessons', 'LessonsController@index');
 Route::get('/lessons/{lesson}', 'LessonsController@show');
 
+Route::post('/lessons/{lesson}/comments', 'CommentsController@store');
+
 /*Route::get('/home', 'PagesController@home');*/

@@ -46,7 +46,7 @@
                       <div class="card-footer w-100 text-muted">
                             {{ $lesson->created_at->diffForHumans()}} by
                             <a href="#">
-                              {{ $lesson->owner->name }}
+                              {{ $lesson->teacher->name }}
                             </a>
                       </div>
                     </div>

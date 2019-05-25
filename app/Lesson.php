@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Lesson extends Model
 {
+    protected $guarded = [];
+
     public function path()
     {
       return '/lessons/' . $this->id;
@@ -16,9 +18,14 @@ class Lesson extends Model
       return $this->hasMany(Comment::class);
     }
 
-    public function owner()
+    public function teacher()
     {
       return $this->belongsTo(User::class, 'user_id');
     }
-    
+
+    public function addComment($comment)
+    {
+      $this->comments()->create($comment);
+    }
+
 }
