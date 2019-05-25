@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Lesson;
 use Illuminate\Http\Request;
 
-class LessonController extends Controller
+class LessonsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,9 @@ class LessonController extends Controller
      */
     public function index()
     {
-        //
+        $lessons = Lesson::latest()->get();
+
+        return view('lessons.index', compact('lessons'));
     }
 
     /**
@@ -46,7 +48,7 @@ class LessonController extends Controller
      */
     public function show(Lesson $lesson)
     {
-        //
+        return view('lessons.show', compact('lesson'));
     }
 
     /**
