@@ -28,7 +28,9 @@
                     <div class="card">
                       <div class="row no-gutters">
                         <div class="col-auto">
-                          <img src="{{asset('thumbnails/placeholder.jpg')}}" class="img-fluid rounded" alt="">
+                          <a href="{{ $lesson->path()}}">
+                            <img src="{{asset('thumbnails/placeholder.jpg')}}" class="img-fluid rounded" alt="">
+                          </a>
                         </div>
                         <div class="col">
                           <div class="card-block px-2">
