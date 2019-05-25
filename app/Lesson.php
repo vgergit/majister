@@ -10,4 +10,9 @@ class Lesson extends Model
     {
       return '/lessons/' . $this->id;
     }
+
+    public function comments()
+    {
+      return $this->hasMany(Comment::class);
+    }
 }
