@@ -28,7 +28,7 @@
                     <div class="card">
                       <div class="row no-gutters">
                         <div class="col-auto">
-                          <img src="{{asset('thumbnails/placeholder.jpg')}}" class="img-fluid" alt="">
+                          <img src="{{asset('thumbnails/placeholder.jpg')}}" class="img-fluid rounded" alt="">
                         </div>
                         <div class="col">
                           <div class="card-block px-2">
@@ -42,9 +42,13 @@
                         </div>
                       </div>
                       <div class="card-footer w-100 text-muted">
-                            {{ $lesson->created_at->diffForHumans()}}
+                            {{ $lesson->created_at->diffForHumans()}} by
+                            <a href="#">
+                              {{ $lesson->owner->name }}
+                            </a>
                       </div>
                     </div>
+                    <div class="mt-4" />
                     @endforeach
                 </div>
             </div>

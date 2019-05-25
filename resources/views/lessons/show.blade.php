@@ -16,18 +16,24 @@
         </div>
     </div>
     <hr>
-    <hr>
 
     <div class="row justify-content-center">
         <div class="col-md-12">
             @foreach($lesson->comments as $comment)
-                <div class="panel panel-default">
-                    <div class="panel-heading">{{ $comment->created_at->diffForHumans()}}</div>
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-header">
+                      <div class="card-title">
+                        <a href="#">  <!-- Link to profile -->
+                          {{ $comment->owner->name }}
+                        </a> said {{ $comment->created_at->diffForHumans()}} ...
+                      </div>
+                    </div>
+
+                    <div class="card-body">
                         {{$comment->content}}
                     </div>
                 </div>
-                <hr>
+                <div class="mt-3" />
             @endforeach
         </div>
     </div>
