@@ -11,6 +11,14 @@ class ParticipateInDiscussionTest extends TestCase
     use RefreshDatabase;
 
     /** @test */
+    function unauthenticated_users_may_not_participate_in_discussions()
+    {
+      $this->expectException('Illuminate\Auth\AuthenticationException');
+
+      $this->post('/lessons/1/comments', []);
+      }
+
+    /** @test */
     function an_authenticated_user_may_participate_in_discussions()
     {
       $user = factory('App\User')->create();
@@ -20,7 +28,7 @@ class ParticipateInDiscussionTest extends TestCase
 
       $lesson = factory('App\Lesson')->create();
 
-      $comment = factory('App\Comment')->create();
+      $comment = factory('App\Comment')->make();
 
       $this->post('/lessons/'.$lesson->id.'/comments', $comment->toArray());
 
