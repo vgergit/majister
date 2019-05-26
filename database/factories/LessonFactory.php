@@ -24,6 +24,7 @@ $factory->define(Lesson::class, function (Faker $faker) {
       },
       'title' => $faker->sentence,
       'content' => $faker->paragraph,
-      'creation_date' => now()
+      'creation_date' => now(),
+      'thumbnail' => $faker->image('public/storage/images',200,200,null,false)
     ];
 });

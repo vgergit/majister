@@ -19,6 +19,7 @@ class CreateLessonsTable extends Migration
             $table->string('title');
             $table->text('content');
             $table->timestamp('creation_date');
+            $table->string('thumbnail');
             $table->timestamps();
         });
     }

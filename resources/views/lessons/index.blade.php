@@ -29,7 +29,7 @@
                       <div class="row no-gutters">
                         <div class="col-auto">
                           <a href="{{ $lesson->path()}}">
-                            <img src="{{asset('thumbnails/placeholder.jpg')}}" class="img-fluid rounded" alt="">
+                            <img src="/storage/images/{{ $lesson->thumbnail}}" class="img-fluid rounded" alt="">
                           </a>
                         </div>
                         <div class="col">
