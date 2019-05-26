@@ -4,13 +4,11 @@
 
     <h1 class="jumbotron-heading">Welcome to Majister</h1>
 
-    <p class="lead text-muted">Please log in or register below.</p>
+    <p class="lead text-muted">A site for teachers, by teachers.</p>
 
     <p>
 
-      <a href="/login" class="btn btn-primary">Log In</a>
-
-      <a href="/register" class="btn btn-secondary">Register</a>
+      <a href="/lessons" class="btn btn-primary">Go to the lessons</a>
 
     </p>
 

@@ -29,6 +29,7 @@ Route::get('/documentation', 'PagesController@documentation');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/lessons', 'LessonsController@index');
+Route::post('/lessons', 'LessonsController@store');
 Route::get('/lessons/{lesson}', 'LessonsController@show');
 
 Route::post('/lessons/{lesson}/comments', 'CommentsController@store');

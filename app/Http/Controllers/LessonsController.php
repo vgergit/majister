@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class LessonsController extends Controller
 {
+    public function __construct()
+    {
+        // Define authorisation, only restrict posting lessons for now
+        $this->middleware('auth')->only('store');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -37,7 +43,15 @@ class LessonsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $lesson = Lesson::create([
+          'user_id' => auth()->id(),
+          'title' => request('title'),
+          'content' => request('content'),
+          'creation_date' => request('creation_date'),
+          'thumbnail' => request('thumbnail')
+        ]);
+
+        return redirect($lesson->path());
     }
 
     /**
