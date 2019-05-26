@@ -18,7 +18,6 @@ class CreateCommentsTable extends Migration
             $table->bigInteger('user_id');
             $table->bigInteger('lesson_id');
             $table->text('content');
-            $table->timestamp('creation_date');
             $table->timestamps();
         });
     }

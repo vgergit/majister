@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+
+  <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="panel panel-default">
@@ -31,6 +32,7 @@
           <div class="col-md-12">
             <form method="POST" action="{{ $lesson->path() . '/comments' }}">
               {{ csrf_field()}}
+
               <div class="form-group">
                 <textarea name="content" id="content" class="form-control" placeholder="Care to comment?" rows="6"></textarea>
               </div>
@@ -42,5 +44,6 @@
     @else
       <p class='text-center'>Please <a href="{{ route('login') }}">sign in</a> or <a href="{{ route('register') }}">register an account</a> to comment on this lesson.</p>
     @endif
-</div>
+  </div>
+
 @endsection

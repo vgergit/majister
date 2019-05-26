@@ -16,8 +16,7 @@ class CommentsController extends Controller
     {
       $lesson->addComment([
         'content' => request('content'),
-        'user_id' => auth()->id(),
-        'creation_date' => now()
+        'user_id' => auth()->id()
       ]);
 
       return back();

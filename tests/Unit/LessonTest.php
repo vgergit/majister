@@ -33,8 +33,7 @@ class LessonTest extends TestCase
 
     $lesson->addComment([
       'content' => 'a_lesson_can_add_a_comment test',
-      'user_id' => 1,
-      'creation_date' => now()
+      'user_id' => 1
     ]);
 
     $this->assertCount(1, $lesson->comments);

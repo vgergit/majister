@@ -25,7 +25,6 @@ $factory->define(Comment::class, function (Faker $faker) {
       'lesson_id' => function() {
         return factory('App\Lesson')->create()->id;
       },
-      'content' => $faker->paragraph,
-      'creation_date' => now()
+      'content' => $faker->paragraph
     ];
 });

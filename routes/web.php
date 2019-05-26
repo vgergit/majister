@@ -19,6 +19,7 @@
 | testing purposes.
 |
 */
+
 Auth::routes();
 
 Route::get('/', 'PagesController@home');
@@ -28,9 +29,7 @@ Route::get('/documentation', 'PagesController@documentation');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/lessons', 'LessonsController@index');
-Route::post('/lessons', 'LessonsController@store');
-Route::get('/lessons/{lesson}', 'LessonsController@show');
+Route::resource('lessons', 'LessonsController');
 
 Route::post('/lessons/{lesson}/comments', 'CommentsController@store');
 

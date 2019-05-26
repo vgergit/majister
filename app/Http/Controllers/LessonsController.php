@@ -32,7 +32,7 @@ class LessonsController extends Controller
      */
     public function create()
     {
-        //
+        return view('lessons.create');
     }
 
     /**
@@ -47,7 +47,6 @@ class LessonsController extends Controller
           'user_id' => auth()->id(),
           'title' => request('title'),
           'content' => request('content'),
-          'creation_date' => request('creation_date'),
           'thumbnail' => request('thumbnail')
         ]);
 
