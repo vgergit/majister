@@ -10,7 +10,7 @@ class LessonsController extends Controller
     public function __construct()
     {
         // Define authorisation, only restrict posting lessons for now
-        $this->middleware('auth')->only('store');
+        $this->middleware('auth')->except(['index','show']);
     }
 
     /**
