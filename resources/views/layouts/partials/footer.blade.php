@@ -4,7 +4,7 @@
 
     <p>
 
-      <a href="#" class="btn btn-primary">Back to top</a>
+      <a href="#top" class="btn btn-primary">Back to top</a>
 
     </p>
 

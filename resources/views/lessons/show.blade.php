@@ -37,7 +37,7 @@
                 <textarea name="content" id="content" class="form-control" placeholder="Care to comment?" rows="6"></textarea>
               </div>
 
-              <button type="submit" class="btn btn-default">Comment on this lesson</button>
+              <button type="submit" class="btn btn-primary">Comment on this lesson</button>
             </form>
           </div>
         </div>

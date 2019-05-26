@@ -5,7 +5,19 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="panel panel-default">
-                <div class="panel-heading">Lessons</div>
+                <div class="panel-heading">
+                  <div class="panel-title pull-left">
+                    <h3>Lessons</h3>
+                  </div>
+                  <div class="panel-title pull-right">
+                    @if (auth()->check())
+                      <a href="lessons/create">Submit a lesson for review</a>
+                    @else
+                      Please <a href="{{ route('login') }}">sign in</a> or <a href="{{ route('register') }}">register an account</a> to submit a lesson for review.
+                    @endif
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
 
                 <div class="panel-body">
                     @foreach ($lessons as $lesson)
@@ -41,4 +53,19 @@
         </div>
     </div>
 </div>
+
+<footer class="text-muted">
+
+  <div class="container" align="center">
+
+    <p>
+
+      <a href="#top" class="btn btn-primary">Back to top</a>
+
+    </p>
+
+  </div>
+
+</footer>
+
 @endsection
